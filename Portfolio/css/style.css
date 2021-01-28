@@ -1,0 +1,375 @@
+@import 'utilities.css';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing:antialiased;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#f2f2f2;
+    --secondary:#070606;
+}
+
+
+/*Header*/
+header{
+    background:var(--dark); 
+}
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin:0 auto;
+}
+ header nav .left a{
+     color:var(--pure);
+     text-decoration: none;
+     margin-right: 2rem;
+     text-transform: uppercase;
+     transition:all .3s ease ;
+ }
+ header nav .left a:hover{
+     color:var(--primary);
+ }
+ header nav{
+     padding: 2rem 0;
+ }
+ header nav .branding{
+     margin-right: 3rem;
+ }
+ 
+.hero{
+    padding: 3rem 0;
+    margin: 5rem 0;
+}
+
+.hero .right h6{
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-top: 2.7rem;
+    margin-bottom: 0.5rem;
+}
+.hero .right h1{
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+.hero .right h1 span{
+    color: var(--primary);
+}
+
+ .hero .left img{
+    width: 400px;
+ }
+ .hero .right{
+     color: var(--pure);
+ }
+ .hero .right p{
+     line-height: 1.9;
+     margin-bottom: 2rem;
+ }
+ .hero .right{
+     margin-top: -7rem;
+ }
+
+
+
+
+
+/*About*/
+ section{
+     padding: 6rem 0;
+ }
+
+ section.about .about-img{
+     width: 454px;
+ }
+ section .about h1{
+     margin-bottom: 1rem;
+     font-size: 1.6rem;
+     font-weight: 400;
+ }
+ section.about h1 span{
+     color: var(--primary);
+ }
+ section.about h3{
+     font-size: 1rem;
+     margin-bottom: 1rem;
+     font-weight: 400;
+ }
+ section.about p{
+    font-family: 'Lato', sans-serif;
+    color: var(--ternary);
+    line-height: 1.9;
+    text-align: justify;
+ }
+ section.about .social{
+     display: flex;
+     margin-top: 20px;
+ }
+ section.about .social a{
+     background: var(--dark);
+     color: white;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 35px;
+     height: 35px;
+     border-radius: 50%;
+     margin-right: 0.6rem;
+ }
+ section.about .social a:hover{
+     background:var(--primary);
+     transition: all 0.3s ease;
+ }
+ section.about .social a img{
+     width: 100%;
+     height: 100%;
+     padding: 0.5rem;
+ }
+
+
+
+/*Projects*/
+ .section-heading{
+     color:var(--secondary);
+     text-align: center;
+     margin-bottom: 1rem;
+     line-height: 0.5;
+
+ }
+ .section-heading span{
+     color: var(--primary);
+ }
+ .section-heading + p{
+     color: var(--ternary);
+     font-family: 'Lato', sans-serif;
+     text-align: center;
+     margin-bottom: 8rem;
+ }
+ section.services{
+     background: var(--light);
+ }
+
+ section.services .card-wrapper{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-column-gap: 2rem;
+ }
+ section.services .card-wrapper .card{
+     background: var(--pure);
+     padding: 3rem 2rem;
+     position: relative;
+     padding-top: 6rem;
+     text-align: center;
+     transition: all 0.3s ease;
+ }
+
+ section.services .card-wrapper .card img{
+     position: absolute;
+     background: #3DCFD3;
+     width: 110px;
+     height: 107px;
+     top:-3.5rem;
+     left: 50%;
+     transform: translateX(-50%);
+ }
+ section.services .card-wrapper .card h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 00.5rem;
+
+ }
+ section.services .card-wrapper .card p{
+    font-family: 'Lato', sans-serif;
+    color: var(--ternary);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+ }
+ section.services .card-wrapper .card a{
+     text-decoration: none;
+     margin: 3rem;
+     padding:10px;
+     background:#3DCFD3;
+     color:black;
+    outline: none;
+ }
+ section.services .card-wrapper .card a:hover{
+    background: transparent;
+    color:var(--primary);
+ }
+ section.services .card-wrapper .card:hover{
+     background: var(--dark);
+ }
+ section.services .card-wrapper .card:hover h2, section.services .card-wrapper .card:hover p{
+     color: var(--pure);
+ }
+
+
+
+
+
+
+/*freelance*/
+ section.freelancer{
+     text-align: center;
+     color: var(--light);
+     background:rgba(0, 0, 0, 0.9);
+
+ }
+ 
+ section.freelancer h1{
+     font-size: 2rem;
+     margin-bottom: 0.5rem;
+ }
+ section.freelancer p{
+     margin-bottom: 2rem;
+     font-family: 'Lato', sans-serif;
+     font-weight: 400;
+     color: #a0a0a0;
+ }
+
+
+
+
+ /*Responsive*/
+
+
+
+
+/*mobile friendy nav
+ .site-main-wrapper{
+     position: relative;
+ }
+ .hamberger{
+     position:absolute;
+     top: 40px;
+     right: 40px;
+     z-index: 11;
+     background: none;
+     border: none;
+     outline: none;
+     cursor: pointer;
+
+ }
+ .hamberger img{
+     width: 30px;
+ }
+ .mobile-nav{
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 1001;
+     background: var(--light);
+     width: 100%;
+     height: 100%;
+     padding: 2rem;
+     padding-top: 5rem;
+     transform: translateX(-100%);
+ }
+ .open{
+     transform: translateX(0);
+ }
+ .times{
+     position: fixed;
+     top: 30px;
+     right: 30px;
+     border: none;
+     background: none;
+     outline: none;
+     cursor: pointer;
+ }
+ .times img{
+     width: 30px;
+ }
+
+ .mobile-nav ul{
+     list-style-type: none;
+ }
+ .mobile-nav ul li a{
+     color: vae(--secondary);
+     text-decoration: none;
+     font-size: 2rem;
+ }
+*/
+
+
+
+
+
+/*skills*/
+ .card{
+    background-color: #fff;
+    border-radius:10px;
+    box-shadow: 0 30px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin: 10px;
+    color: #333;
+}
+.languages{
+    background:#10878b;
+    text-align: center;
+}
+ .languages .flex{
+    flex-wrap: wrap;
+    
+}
+.languages .card{
+    text-align: center;
+    margin: 18px 10px 40px;
+    transition: transform 0.2s ease-in;
+}
+.languages .card img{
+    width: 80px;
+    height: 82px;
+}
+.languages .card h4{
+    font-size: 20px;
+    margin-bottom:10px ;
+}
+.languages .card:hover{
+    transform: translateY(-15px);
+}
+
+.my-2{
+    margin: 1.5rem 0;
+}
+
+
+
+
+
+/* responsive
+@media(max-width:1024px){
+    header #main-nav{
+        display: none;
+    }
+    .hero{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .hero .right{
+        margin:0;
+        width: 100%;
+    }
+    .hero .right button{
+        margin-bottom: 2rem;
+    }
+    .hero .left{
+        display: none;
+    }
+    
+    
+    
+
+}*/
